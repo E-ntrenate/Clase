@@ -1,4 +1,4 @@
-package com.ejemplo.modelo;
+package com.ejemplo.ejercicioClase1.modelo;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -27,10 +27,17 @@ public class Persona {
     private Persona cabezaDeFamilia;
     @OneToMany(mappedBy = "cabezaDeFamilia")
     private Set<Persona> familia;
+    @ManyToOne
+    private  Vivienda vivienda;
+
+
+
     public Persona() {
     }
 
-    public Persona(String nombre, long telefono, int edad, String sexo, Municipio municipio, Set viviendaConjunto, Persona cabezaDeFamilia, Set<Persona> familia) {
+
+
+    public Persona(String nombre, long telefono, int edad, String sexo, Municipio municipio, Set viviendaConjunto, Persona cabezaDeFamilia, Set<Persona> familia, Vivienda vivienda) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.edad = edad;
@@ -39,6 +46,9 @@ public class Persona {
         this.viviendaConjunto = viviendaConjunto;
         this.cabezaDeFamilia = cabezaDeFamilia;
         this.familia = familia;
+        this.vivienda= vivienda;
+
+
     }
 
     public int getDi() {
@@ -111,5 +121,13 @@ public class Persona {
 
     public void setFamilia(Set<Persona> familia) {
         this.familia = familia;
+    }
+
+    public Vivienda getVivienda() {
+        return vivienda;
+    }
+
+    public void setVivienda(Vivienda vivienda) {
+        this.vivienda = vivienda;
     }
 }

@@ -1,4 +1,4 @@
-package com.ejemplo.modelo;
+package com.ejemplo.ejercicioClase1.modelo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

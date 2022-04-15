@@ -1,7 +1,6 @@
-package com.ejemplo.modelo;
+package com.ejemplo.ejercicioClase1.modelo;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 public class Vivienda {
@@ -14,6 +13,7 @@ public class Vivienda {
 
     @ManyToOne
     private Municipio municipio;
+
 
     public Vivienda() {
 
@@ -65,4 +65,6 @@ public class Vivienda {
     public void setMunicipio(Municipio municipio) {
         this.municipio = municipio;
     }
+
+
 }
