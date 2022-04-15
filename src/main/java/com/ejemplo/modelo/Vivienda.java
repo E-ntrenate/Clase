@@ -1,9 +1,7 @@
 package com.ejemplo.modelo;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Vivienda {
@@ -14,14 +12,18 @@ public class Vivienda {
     private int capacidad;
     private int niveles;
 
+    @ManyToOne
+    private Municipio municipio;
+
     public Vivienda() {
 
     }
 
-    public Vivienda(String direccion, int capacidad, int niveles) {
+    public Vivienda(String direccion, int capacidad, int niveles, Municipio municipio) {
         this.direccion = direccion;
         this.capacidad = capacidad;
         this.niveles = niveles;
+        this.municipio = municipio;
     }
 
     public int getId_viv() {
@@ -54,5 +56,13 @@ public class Vivienda {
 
     public void setNiveles(int niveles) {
         this.niveles = niveles;
+    }
+
+    public Municipio getMunicipio() {
+        return municipio;
+    }
+
+    public void setMunicipio(Municipio municipio) {
+        this.municipio = municipio;
     }
 }
