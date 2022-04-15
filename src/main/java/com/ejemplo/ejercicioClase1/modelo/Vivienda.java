@@ -14,7 +14,6 @@ public class Vivienda {
     @ManyToOne
     private Municipio municipio;
 
-
     public Vivienda() {
 
     }
@@ -65,6 +64,4 @@ public class Vivienda {
     public void setMunicipio(Municipio municipio) {
         this.municipio = municipio;
     }
-
-
 }

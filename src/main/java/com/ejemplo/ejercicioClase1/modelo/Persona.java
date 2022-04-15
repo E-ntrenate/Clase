@@ -18,10 +18,10 @@ public class Persona {
 
     @ManyToMany(targetEntity = Vivienda.class)
     @JoinTable(
-            name = "persona_vivienda",
+            name = "persona_tiene_vivienda",
             joinColumns = @JoinColumn(name = "id_persona", referencedColumnName = "di"),
             inverseJoinColumns = @JoinColumn(name = "id_viv", referencedColumnName = "id_viv"))
-    private Set viviendaConjunto;
+    private Set viviendasPropias;
 
     @ManyToOne
     private Persona cabezaDeFamilia;
@@ -30,20 +30,16 @@ public class Persona {
     @ManyToOne
     private  Vivienda vivienda;
 
-
-
     public Persona() {
     }
 
-
-
-    public Persona(String nombre, long telefono, int edad, String sexo, Municipio municipio, Set viviendaConjunto, Persona cabezaDeFamilia, Set<Persona> familia, Vivienda vivienda) {
+    public Persona(String nombre, long telefono, int edad, String sexo, Municipio municipio, Set viviendasPropias, Persona cabezaDeFamilia, Set<Persona> familia, Vivienda vivienda) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.edad = edad;
         this.sexo = sexo;
         this.municipio = municipio;
-        this.viviendaConjunto = viviendaConjunto;
+        this.viviendasPropias = viviendasPropias;
         this.cabezaDeFamilia = cabezaDeFamilia;
         this.familia = familia;
         this.vivienda= vivienda;
@@ -99,12 +95,12 @@ public class Persona {
         this.municipio = municipio;
     }
 
-    public Set getViviendaConjunto() {
-        return viviendaConjunto;
+    public Set getViviendasPropias() {
+        return viviendasPropias;
     }
 
-    public void setViviendaConjunto(Set viviendaConjunto) {
-        this.viviendaConjunto = viviendaConjunto;
+    public void setViviendasPropias(Set viviendasPropias) {
+        this.viviendasPropias = viviendasPropias;
     }
 
     public Persona getCabezaDeFamilia() {
