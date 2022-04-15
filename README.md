@@ -1,2 +1,0 @@
-# Clase
-Ejercicios en clase

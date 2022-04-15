@@ -1,13 +1,15 @@
 package com.ejemplo.controlador;
 
-import org.springframework.ui.Model;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class AppController {
+    private String mensaje = "Cargando página...";
+
     @GetMapping("/")
-    public String showMainPage(Model model){
-        return "home";
+    public String getMainPage(){
+        System.out.println(mensaje);
+        return "home-page";
     }
 }
