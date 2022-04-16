@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos de Vivienda</title>
+</head>
+<body>
+<h1>Datos de Vivienda</h1>
+<a th:href="@{/viviendas}"> Regresar </a>
+<br/>
+<form th:action="@{/guardarVivienda}" method="post" th:object="${vivienda}">
+    <input type="hidden" name="id_viv" th:field="*{id_viv}">
+    <br/>
+    <label for="direccion">Dirección:</label>
+    <input type="text" name="direccion" th:field="*{direccion}" />
+    <br/>
+    <label for="capacidad">Capacidad:</label>
+    <input type="text" name="capacidad" th:field="*{capacidad}" />
+    <br/>
+    <label for="niveles">Niveles:</label>
+    <input type="text" name="niveles" th:field="*{niveles}" />
+    <br/>
+    <label for="municipio">Municipio:</label>
+    <input type="text" name="municipio" th:field="*{municipio}" />
+    <br/>
+    <input type="submit" name="guardar" value="Guardar">
+</form>
+</body>
+</html>

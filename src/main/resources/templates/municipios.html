@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Clase 1</title>
+</head>
+<body>
+<h1>BASE DE DATOS</h1>
+<p>Equipo 3 - E-ntrenate</p>
+<br/><br/>
+<a th:href="@{/}">Inicio</a>
+<a th:href="@{/personas}">Ver Personas</a>
+<a th:href="@{/municipios}">Ver Municipios</a>
+<a th:href="@{/viviendas}">Ver Viviendas</a>
+<br/><br/>
+
+<a th:href="@{/agregarMunicipio}">Crear Municipio</a>
+<table border="1">
+    <tr>
+        <th>id_mun</th>
+        <th>nombre</th>
+        <th>area</th>
+        <th>presupuesto</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </tr>
+
+    <tr th:each="municipio : ${listaMunicipios}">
+        <td th:text="${municipio.id_mun}">Mostrar ID</td>
+        <td th:text="${municipio.nombre}">Mostrar ID</td>
+        <td th:text="${municipio.area}">Mostrar ID</td>
+        <td th:text="${municipio.presupuesto}">Mostrar ID</td>
+        <td><a th:href="@{/editarMunicipio/} + ${municipio.id_mun}" th:text="Editar"/></td>
+        <td><a th:href="@{/eliminarMunicipio/} + ${municipio.id_mun}" th:text="Eliminar"/></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio Clase 1</title>
+    </head>
+    <body>
+        <h1>BASE DE DATOS</h1>
+        <p>Equipo 3 - E-ntrenate</p>
+        <br/><br/>
+        <a th:href="@{/}">Inicio</a>
+        <a th:href="@{/personas}">Ver Personas</a>
+        <a th:href="@{/municipios}">Ver Municipios</a>
+        <a th:href="@{/viviendas}">Ver Viviendas</a>
+        <br/><br/>
+
+        <a th:href="@{/agregarPersona}">Crear Persona</a>
+        <table border="1">
+            <tr>
+                <th>di</th>
+                <th>nombre</th>
+                <th>telefono</th>
+                <th>edad</th>
+                <th>sexo</th>
+                <th>municipio</th>
+                <th>vivienda</th>
+                <th>cabezaDeFamilia</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+            </tr>
+
+            <tr th:each="persona : ${listaPersonas}">
+                <td th:text="${persona.di}">Mostrar ID</td>
+                <td th:text="${persona.nombre}">Mostrar ID</td>
+                <td th:text="${persona.telefono}">Mostrar ID</td>
+                <td th:text="${persona.edad}">Mostrar ID</td>
+                <td th:text="${persona.sexo}">Mostrar ID</td>
+                <td th:text="${persona.municipio}">Mostrar ID</td>
+                <td th:text="${persona.vivienda}">Mostrar ID</td>
+                <td th:text="${persona.cabezaDeFamilia}">Mostrar ID</td>
+                <td><a th:href="@{/editarPersona/} + ${persona.di}" th:text="Editar"/></td>
+                <td><a th:href="@{/eliminarPersona/} + ${persona.di}" th:text="Eliminar"/></td>
+            </tr>
+        </table>
+    </body>
+</html>

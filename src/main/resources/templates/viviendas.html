@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Clase 1</title>
+</head>
+<body>
+<h1>BASE DE DATOS</h1>
+<p>Equipo 3 - E-ntrenate</p>
+<br/><br/>
+<a th:href="@{/}">Inicio</a>
+<a th:href="@{/personas}">Ver Personas</a>
+<a th:href="@{/municipios}">Ver Municipios</a>
+<a th:href="@{/viviendas}">Ver Viviendas</a>
+<br/><br/>
+
+<a th:href="@{/agregarVivienda}">Crear Vivienda</a>
+<table border="1">
+    <tr>
+        <th>id_viv</th>
+        <th>direccion</th>
+        <th>capacidad</th>
+        <th>niveles</th>
+        <th>municipio</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </tr>
+
+    <tr th:each="vivienda : ${listaViviendas}">
+        <td th:text="${vivienda.id_viv}">Mostrar ID</td>
+        <td th:text="${vivienda.direccion}">Mostrar ID</td>
+        <td th:text="${vivienda.capacidad}">Mostrar ID</td>
+        <td th:text="${vivienda.niveles}">Mostrar ID</td>
+        <td th:text="${vivienda.municipio}">Mostrar ID</td>
+        <td><a th:href="@{/editarVivienda/} + ${vivienda.id_viv}" th:text="Editar"/></td>
+        <td><a th:href="@{/eliminarVivienda/} + ${vivienda.id_viv}" th:text="Eliminar"/></td>
+    </tr>
+</table>
+</body>
+</html>
