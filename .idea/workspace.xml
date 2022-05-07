@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40a481bb-c57d-48c0-abf7-a7c4b70eb086" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/EjercicioClase1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/EjercicioClase1Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/model/Municipio.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/model/Municipio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/model/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/model/Vivienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/model/Vivienda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/repository/MunicipioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/repository/MunicipioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/repository/PersonaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/repository/PersonaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/repository/ViviendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/repository/ViviendaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/service/MunicipioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/service/MunicipioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/service/MunicipioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/service/MunicipioServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/service/PersonaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/service/PersonaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/service/PersonaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/service/PersonaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/service/ViviendaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/service/ViviendaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejemplo/ejercicioClase1/service/ViviendaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/java/com/ejemplo/ejercicioClase1/service/ViviendaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/resources/templates/home-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modificarMunicipio.html" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/resources/templates/modificarMunicipio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modificarPersona.html" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/resources/templates/modificarPersona.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modificarVivienda.html" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/resources/templates/modificarVivienda.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/municipios.html" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/resources/templates/municipios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personas.html" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/resources/templates/personas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/viviendas.html" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/main/resources/templates/viviendas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ejemplo/ejercicioClase1/EjercicioClase1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD_1/src/test/java/com/ejemplo/ejercicioClase1/EjercicioClase1ApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="40a481bb-c57d-48c0-abf7-a7c4b70eb086" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,9 +75,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Santiago\IdeaProjects\Clase\src\main\java\com\ejemplo\ejercicioClase1\service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Santiago\IdeaProjects\Clase\CRUD_1" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -117,19 +84,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.EjercicioClase1Application">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Clase" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Clase" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EjercicioClase1Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Clase" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ejemplo.ejercicioClase1.EjercicioClase1Application" />
@@ -161,10 +115,6 @@
       <workItem from="1650214811805" duration="117000" />
       <workItem from="1650343844410" duration="82000" />
       <workItem from="1650344266414" duration="295000" />
-      <workItem from="1651956670757" duration="774000" />
-      <workItem from="1651964765900" duration="58000" />
-      <workItem from="1651964828096" duration="32000" />
-      <workItem from="1651964862785" duration="50000" />
     </task>
     <servers />
   </component>
